@@ -1,0 +1,120 @@
+body {
+  overflow-x: hidden;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  padding: 10px 150px;
+  background-image: url("./img/image\ 5\ \(1\).png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.header-top-container img {
+  object-fit: cover;
+}
+.header-top-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header-icon {
+  display: flex;
+  gap: 10px;
+}
+.header-center-container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-center-left span {
+  color: #f36f20;
+}
+.header-center-left h2 {
+  font-size: 4rem;
+}
+.header-center-right {
+  width: 350px;
+}
+
+.header-end-container img {
+  object-fit: cover;
+}
+.header-end-container {
+  gap: 30px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.header-box-a a {
+  color: white !important;
+}
+.header-blok-a {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-box-a {
+  justify-self: flex-end;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  background-color: #f36f20;
+  color: white !important;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+nav {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+.nav-blok-img img {
+  width: 100%;
+  transition: .6s;
+  object-fit: cover;
+}
+.nav-blok-img {
+  position: relative;
+  overflow: hidden;
+}
+.nav-blok {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.nav-blok-img:hover img {
+  transform: scale(1.1);
+}
+.nav-blok-img::after {
+  background-color: rgba(0, 0, 0, 0.463);
+  position: absolute;
+  content: "";
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.nav-blok p:hover{
+    background-color: #f36f20;
+}
+.nav-blok p {
+    transition: .6s;
+  position: absolute;
+  color: white;
+  margin-top: -10px;
+  background-color: #282828;
+  padding: 15px 0px;
+  width: 100%;
+}
