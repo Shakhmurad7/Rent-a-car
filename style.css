@@ -118,6 +118,13 @@ nav {
   padding: 15px 0px;
   width: 100%;
 }
+
+
+
+
+/* <!-- ----content---- --> */
+
+
 .content {
   padding: 100px 200px;
   display: flex;
@@ -157,6 +164,20 @@ nav {
   flex-direction: column;
   gap: 20px;
   width: 50%;
+}
+.content-text h2{
+  position: relative;
+}
+.content-text h2::after{
+  background-color: #f36f20;
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 50px;
+  right: 0;
+  left: 0;
+  bottom: -10px;
+  position: absolute;
 }
 .content-text p {
   line-height: 22px;
@@ -222,4 +243,92 @@ nav {
   position: relative;
   width: 30%;
   padding: 10px 30px;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+.box-blok h2{
+  font-size: 2.2rem;
+}
+.box-blok:hover{
+    transform: translateY(-10px);
+}
+.box-blok{
+  transition: .5s;
+  cursor: pointer;
+  text-align: center;
+  gap: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 230px;
+  height: 110px;
+  background-color: #28282841;
+  background-blend-mode: multiply;
+  background-image: url('./img/black-metallic-with-detailed-circular-mesh_1017-21346\ 1.png');
+  object-fit: cover;
+}
+
+/* <!-- ----section---- --> */
+
+section{
+  padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-top-container h2{
+  position: relative;
+  font-size: 2rem;
+}
+.section-top-container h2::after{
+  content:"";
+  position: absolute;
+  right: 50%;
+  bottom: -10px;
+  width: 50px;
+  height: 3px;
+  background-color: #f36f20;
+}
+.section-top-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+}
+.section-top-block{
+  padding-top: 40px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.section-btn-a:hover{
+  transition: .6s;
+ transform: scale(1.1);
+}
+.section-btn-a a{
+  transition: .5s;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #545353;
+  border:1px solid  #545353;
+}
+.section-btn-a a:hover{
+
+  background-color: #f36f20;
+  color: white;
+  border-color: #f36f20;
 }
