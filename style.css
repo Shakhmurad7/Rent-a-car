@@ -6,6 +6,8 @@ a {
   text-decoration: none;
 }
 * {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -397,4 +399,164 @@ section{
 .section-btn-a-card a:hover{
   background-color: #f36f20;
   color: white;
+}
+
+
+/* <!-- ----main----- --> */
+
+main{
+  background-repeat: no-repeat;
+  padding: 50px ;
+  height: auto;
+  width: 100%;
+  background-image: url('./img/Rectangle\ 182.png');
+}
+.main-text-top h2{
+  font-size:2.2rem;
+}
+.main-container{
+  padding-top: 100px;
+}
+.main-text-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-page-center{
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-page-top , .main-page-bottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-page-block-1 ,.main-page-block-2 ,.main-page-block-3, .main-page-block-4 ,.main-page-block-5 ,.main-page-block-6{
+  width: 310px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.main-page-block-1  img,.main-page-block-2  img,.main-page-block-3 img, .main-page-block-4  img,.main-page-block-5  img,.main-page-block-6 img{
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+}
+.main-page-block-1 ,.main-page-block-2 ,.main-page-block-3, .main-page-block-4 ,.main-page-block-5 ,.main-page-block-6{
+  position: relative;
+}
+.main-page-block-1{
+  margin-left: 100px;
+}
+.main-page-block-1::after{
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./img/YUXARI\ SOL.png");
+  width: 100px;
+  height: 100px;
+  right: 0;
+  top: 80px;
+} 
+.main-page-block-2{
+  margin-top: -100px;
+}
+.main-page-block-2::after{
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./img/YUXARI\ ORTA.png");
+  width: 100px;
+  height: 100px;
+  right: 120px;
+  top: 130px;
+} 
+.main-page-block-3{
+  margin-top: 30px;
+  margin-right: 0px;
+}
+.main-page-block-3::after{
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./img/YUXARI\ SAG.png");
+  width: 100px;
+  height: 100px;
+  left: -120px;
+  top: 30px;
+} 
+.main-page-block-4{
+  margin-left: 50px;
+  margin-top: -150px;
+}
+.main-page-block-4 p{
+  width: 210px;
+}
+.main-page-block-4::after{
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./img/ASAGI\ SOL.png");
+  width: 100px;
+  height: 100px;
+  right: -15px;
+  top: 90px;
+} 
+.main-page-block-5{
+  margin-top: 40px;
+}
+.main-page-block-5::after{
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./img/ASAHI\ ORTA.png");
+  width: 100px;
+  height: 100px;
+  right: 100px;
+  top: -100px;
+} 
+.main-page-block-6{
+  margin-top: -70px;
+}
+.main-page-block-6::after{
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./img/ASAGI\ SAG.png");
+  width: 100px;
+  height: 100px;
+  left: -100px;
+  top:0;
+} 
+
+
+.carusel{
+  padding: 50px 0px;
+}
+.carusel-center-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carusel h2{
+  position: relative;
+  font-size: 2.2rem;
+}
+.carusel h2::after{
+  background-color: #f36f20;
+  content: "";
+  width:20%;
+  height: 4px;
+  right: 40%;
+  bottom: -10px;
+  position: absolute;
 }
