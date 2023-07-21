@@ -560,3 +560,13 @@ main{
   bottom: -10px;
   position: absolute;
 }
+.owl-carousel img{
+  transition: .5s;
+  -webkit-filter:grayscale(100%);
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+}
+.owl-carousel img:hover{
+  -webkit-filter:grayscale(0%);
+}
