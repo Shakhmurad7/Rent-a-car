@@ -562,7 +562,11 @@ main{
   bottom: -10px;
   position: absolute;
 }
+.owl-carusel-blok{
+  padding-bottom: 50px;
+}
 .owl-carousel img{
+  cursor: pointer;
   transition: .5s;
   -webkit-filter:grayscale(100%);
   object-fit: contain;
@@ -633,4 +637,64 @@ input::-webkit-inner-spin-button{
 }
 .container-page-img{
   width: 60%;
+}
+
+
+
+.accardion{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  padding: 50px 70px;
+}
+.top-text{
+  display: flex;
+  justify-content: center;
+}
+.top-text h2{
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.top-text h2::after{
+  position: absolute;
+  content: '';
+  background-color: #f36f20;
+  width: 50px;
+  height: 4px;
+  bottom: -10px;
+  right:45%;
+}
+.accardion-blok{
+  cursor: pointer;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-left: 3px solid #f36f20;
+}
+
+.accardion-blok::after{
+  content: '+';
+  right: 10px;
+  top: 14px;
+  font-size: 25px;
+  position: absolute;
+}
+.accardion-active.accardion-blok::after{
+  content: '-';
+
+}
+.accardion-p {
+  transition: .4s;
+  overflow: hidden;
+  height: 0;
+  padding: 0px 20px;
+}
+.accardion-active .accardion-p  {
+  padding: 20px 20px 10px 20px;
+  height: auto;
 }

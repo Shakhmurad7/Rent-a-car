@@ -1,1 +1,243 @@
 https://www.figma.com/file/Qi1rCDNbSUrtcKubQGBBTp/AFN-Transport?type=design&node-id=0-1&mode=design&t=5xN1s9uYMVhcn4ZX-0
+
+
+
+
+
+const plus= document.getElementsByClassName('accardion-icon-plus')
+const minus = document.getElementsByClassName('accardion-icon-minus')
+const accardiontext = document.getElementsByClassName('accardion-p')
+const accardion = document.getElementsByClassName('accardion-blok')
+
+for(i=0; i<minus.length; i++){
+  minus[i].addEventListener('click' , function(){
+        this.classList.toggle('minus-open')
+  })      
+}  
+
+for(i=0; i<accardion.length; i++){
+  accardion[i].addEventListener('click' , function(){
+        this.classList.toggle('accardion-active')
+  })      
+}  
+for(i=0; i<plus.length; i++){
+  plus[i].addEventListener('click' , function(){
+        this.classList.toggle('plus-open')
+  })      
+}  
+
+
+
+
+
+
+
+.container-page{
+  width: 100%;
+  background-image: url('./img/rezervasiya-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+.container-page-row{
+  gap: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 70px 50px;
+}
+.container-page-img img{
+  width: 100%;
+  height: 100%;
+}
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+.container-page-text input::placeholder{
+  color: white;
+}
+.container-page-text input{
+  border: none;
+  padding: 5px;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 1px solid;
+  color: white !important;
+}
+.page-input{
+  display: flex;
+  gap: 20px;
+}
+.container-page-text button{
+  border-radius: 10px;
+  border-color: #f36f20;
+  color: white;
+  background-color: #f36f20;
+  padding: 10px 30px;
+  width: fit-content;
+}
+.container-page-text h2{
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.container-page-text{
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 40%;
+}
+.container-page-img{
+  width: 60%;
+}
+
+.accardion{
+  width: 100%;
+  height: auto;
+  padding: 50px 70px;
+}
+.top-text{
+  display: flex;
+  justify-content: center;
+}
+.top-text h2{
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.top-text h2::after{
+  position: absolute;
+  content: '';
+  background-color: #f36f20;
+  width: 50px;
+  height: 4px;
+  bottom: -10px;
+  right:45%;
+}
+.accardion-blok{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-left: 3px solid #f36f20;
+}
+
+.accardion-blok::after{
+  content: '+';
+  right: 10px;
+  top: 14px;
+  font-size: 25px;
+  position: absolute;
+}
+.accardion-active.accardion-blok::after{
+  content: '-';
+
+}
+.accardion-p {
+  transition: .4s;
+  overflow: hidden;
+  height: 0;
+  padding: 0px 20px;
+}
+.accardion-active .accardion-p  {
+  padding: 20px 20px 10px 20px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+    <div class="container-page">
+        <div class="container-page-row">
+          <div class="container-page-text">
+              <h2>Bir neçə dəqiqəyə 
+                arenda maşın Bakıda</h2>
+              <p>Bakıda avtomobil kirayəsinin ən yaxşı şərtlərlə sürətli sifarişi üçün bizimlə əlaqə saxlayın</p>
+              <div class="page-input">
+                <input type="text" placeholder="Adiniz ve Soyadiniz">
+                <input type="number" placeholder="Elaqe nomrresi">
+              </div>
+              <button>Rezervasiya</button>
+          </div>
+
+          <div class="container-page-img">
+            <img src="./img/image 15.png" alt="">
+          </div>
+        </div>
+    </div>
+
+      <div class="accardion">
+        <div class="top-text">
+          <h2>Avtomobil kirayesi. Ən çox verilən suallar</h2>
+        </div>
+
+        <div class="accardion-blok">
+          <div class="accardion-h2">
+            <h3>"AFN Transport"dan avtomobil kiraye etmək üçün nə qədər müddət sürücülük vəsiqəsinə sahib olmalıyam?</h3>
+          </div>
+
+            <div class="accardion-p">
+               <p>"AFN Transport" nəqliyyat şirkətindən icare masin götürmək üçün ən azı 2 illik sürücülük vəsiqəniz olmalıdır.</p>
+            </div>
+
+           
+
+        </div>
+
+        <div class="accardion-blok">
+          <div class="accardion-h2">
+            <h3>"AFN Transport"dan avtomobil kiraye etmək üçün nə qədər müddət sürücülük vəsiqəsinə sahib olmalıyam?</h3>
+          </div>
+
+            <div class="accardion-p">
+               <p>"AFN Transport" nəqliyyat şirkətindən icare masin götürmək üçün ən azı 2 illik sürücülük vəsiqəniz olmalıdır.</p>
+            </div>
+
+
+        </div>
+
+        <div class="accardion-blok">
+          <div class="accardion-h2">
+            <h3>"AFN Transport"dan avtomobil kiraye etmək üçün nə qədər müddət sürücülük vəsiqəsinə sahib olmalıyam?</h3>
+          </div>
+
+            <div class="accardion-p">
+               <p>"AFN Transport" nəqliyyat şirkətindən icare masin götürmək üçün ən azı 2 illik sürücülük vəsiqəniz olmalıdır.</p>
+            </div>
+
+            
+        </div>
+
+        <div class="accardion-blok">
+          <div class="accardion-h2">
+            <h3>"AFN Transport"dan avtomobil kiraye etmək üçün nə qədər müddət sürücülük vəsiqəsinə sahib olmalıyam?</h3>
+          </div>
+
+            <div class="accardion-p">
+               <p>"AFN Transport" nəqliyyat şirkətindən icare masin götürmək üçün ən azı 2 illik sürücülük vəsiqəniz olmalıdır.</p>
+            </div>
+
+          
+        </div>
+
+        <div class="accardion-blok">
+          <div class="accardion-h2">
+            <h3>"AFN Transport"dan avtomobil kiraye etmək üçün nə qədər müddət sürücülük vəsiqəsinə sahib olmalıyam?</h3>
+          </div>
+
+            <div class="accardion-p">
+               <p>"AFN Transport" nəqliyyat şirkətindən icare masin götürmək üçün ən azı 2 illik sürücülük vəsiqəniz olmalıdır.</p>
+            </div>
+
+    
+        </div>
+        
+
+      </div>
