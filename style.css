@@ -29,8 +29,14 @@ header {
   justify-content: space-between;
 }
 .header-icon {
+  align-items: center;
   display: flex;
   gap: 10px;
+}
+.header-container-icon{
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .header-center-container {
   padding-top: 50px;
@@ -249,6 +255,7 @@ nav {
 }
 
 .box{
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -311,9 +318,10 @@ section{
   width: 100%;
 }
 .section-top-block{
+  flex-wrap: wrap;
   padding-top: 40px;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
 }
@@ -336,6 +344,9 @@ section{
 }
 
 .section-card{
+  gap: 40px;
+  flex-wrap: wrap;
+
   padding: 50px 0px;
   width: 100%;
   display: flex;
@@ -347,12 +358,18 @@ section{
 }
 .card{
   border-radius: 10px;
-  width: 260px;
+  width: 280px;
   height: auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .card-text span{
   width: 100%;
@@ -405,7 +422,8 @@ section{
 /* <!-- ----main----- --> */
 
 main{
-  background-repeat: no-repeat;
+
+  background-size: cover;
   padding: 50px ;
   height: auto;
   width: 100%;
@@ -753,10 +771,17 @@ footer{
   background-size: cover;
 }
 .footer-container{
+  width: 100%;
   color: white;
   padding: 40px 100px;
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
+}
+.footer-img{
+  padding: 0px 15px;
+}
+.footer-block-text{
+  padding: 0px 15px;
 }
 .footer-block-text p{
   padding: 5px 0px;
@@ -795,6 +820,12 @@ footer{
   display: flex;
   gap: 15px;
 }
+.footer-container-page{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .footer-end{
   color: #A0A0A0;
@@ -802,4 +833,157 @@ footer{
   border-top: 1px  solid  #464646;
   display: flex;
   justify-content: space-between;
+}
+
+.main-page-blok img{
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.main-page-blok{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.main-container-page img{
+  cursor: pointer;
+}
+.main-container-page{
+  padding-top:50px ;
+  display: none;
+
+}
+
+@media(max-width:1270px){
+  .header-container-icon{
+    display: none;
+  }
+  section {
+    padding: 100px 30px;
+  }
+  .card{
+    width: 220px;
+  }
+  .content{
+    padding: 100px 30px;
+  }
+}
+@media(max-width:1050px){
+  .header-end-container img{
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+  }
+  header {
+    padding: 15px 30px;
+    height: auto;
+  }
+  .header-center-container{
+    padding-bottom: 40px;
+    display: block;
+    text-align: center;
+  }
+  .header-center-right{
+    display: none;
+  }
+  .header-blok-a{
+    display: none;
+  }
+  .nav-blok , nav{
+    display: none;
+  }
+  .footer-end {
+    padding: 40px 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .footer-container{
+    padding: 40px 30px;
+  }
+  .main-container {
+    display: none;
+  }
+  .main-container-page{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+}
+
+@media(max-width:870px){
+  .main-text-top h2 , .container-page-text h2, .aside-page-text h2 , .section-top-container h2 , .content-text h2 {
+    font-size: 1.5rem;
+  }
+  .aside-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .aside-img{
+    width: 100%;
+  }
+  .aside-img img{
+    object-fit: cover;
+    width: 100%;
+  }
+  .aside-page-text{
+    width: 100%;
+  }
+  .container-page-row{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .container-page-text{
+    width: 100%;
+  }
+  .container-page-img{
+    width: 100%;
+  }
+  .section-card{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .accardion{
+    padding: 50px 30px;
+  }
+  .content-img {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  .content-text {
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-direction:column;
+  }
+  .content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-container-page{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    
+  }
+}
+@media(max-width:500px){
+  
+  .header-center-left h2 {
+    font-size: 1.8rem;
+  }
 }
