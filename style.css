@@ -685,6 +685,7 @@ input::-webkit-inner-spin-button{
   position: absolute;
 }
 .accardion-active.accardion-blok::after{
+  color:#f36f20;
   content: '-';
 
 }
@@ -697,4 +698,108 @@ input::-webkit-inner-spin-button{
 .accardion-active .accardion-p  {
   padding: 20px 20px 10px 20px;
   height: auto;
+}
+
+
+
+
+aside{
+  width: 100%;
+  background-image: url('./img/catdirilma-bg\ 1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aside-container{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 90%;
+}
+ .aside-img img{
+  width: 100%;
+  height: 100%;
+}
+.aside-img{
+
+  width: 40%;
+}
+.aside-page-text h2::after{
+  position: absolute;
+  background-color: #f36f20;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  bottom: 0px;
+  content: "";
+}
+.aside-page-text h2{
+  position: relative;
+  font-size: 2.2rem;
+  padding-bottom: 10px;
+
+}
+.aside-page-text{
+  width: 50%;
+}
+.aside-page-text p{
+  padding: 15px 0;
+}
+
+footer{
+  background-image: url('./img/footer.jpg');
+  width: 100%;
+  height:auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-container{
+  color: white;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-block-text p{
+  padding: 5px 0px;
+  position: relative;
+}
+.footer-block-text p::after{
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -15px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #f36f20;
+}
+
+.footer-icon-text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-icon-row-p i{
+  color: #f36f20;
+}
+.footer-icon-row-p{
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.footer-icon{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-icon-row{
+  display: flex;
+  gap: 15px;
+}
+
+.footer-end{
+  color: #A0A0A0;
+  padding: 15px 100px;
+  border-top: 1px  solid  #464646;
+  display: flex;
+  justify-content: space-between;
 }
