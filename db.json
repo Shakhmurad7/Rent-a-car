@@ -1,0 +1,11 @@
+{
+    "posts":[
+        {
+            "id":1,
+            "name":"Shakhmurad",
+            "age":20,
+            "phon":"+994500993232",
+            "car":"Bmw"
+        }
+    ]
+}
