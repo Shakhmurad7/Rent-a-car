@@ -353,7 +353,7 @@ section {
 }
 .card {
   border-radius: 10px;
-  width: 280px;
+  width: 240px;
   height: auto;
   display: flex;
   flex-direction: column;
