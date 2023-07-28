@@ -21,5 +21,9 @@ close.addEventListener("click", function () {
 fetch("http://localhost:3000/posts")
   .then((req) => req.json())
   .then((data) => {
-    // console.log(data);
+    console.log(data);
   });
+
+$(document).ready(function () {
+  $("select").niceSelect();
+});

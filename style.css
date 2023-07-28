@@ -341,9 +341,7 @@ section {
 .section-card {
   gap: 40px;
   flex-wrap: wrap;
-
   padding: 50px 0px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
