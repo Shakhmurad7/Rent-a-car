@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden;
+  overflow: hidden visible;
 }
 a {
   color: black;
@@ -928,14 +928,21 @@ footer {
 .menu-active {
   left: 0;
 }
-
-.header-container-icon-menu {
+.header-container-icon-menu-left{
   height: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
 }
+.header-container-icon-menu {
+  height: 80%;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
 
 @media (max-width: 1270px) {
   .header-container-icon {
@@ -1068,6 +1075,9 @@ footer {
 }
 
 @media (max-width: 720px) {
+  .header-container-icon-menu{
+    display: flex;
+  }
   .menu-left {
     display: none;
   }
