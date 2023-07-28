@@ -1,5 +1,8 @@
 body {
-  overflow: hidden visible;
+  overflow-x: hidden;
+}
+html{
+  overflow-x: hidden;
 }
 a {
   color: black;
@@ -285,6 +288,7 @@ nav {
 /* <!-- ----section---- --> */
 
 section {
+  width: 100%;
   padding: 100px;
   display: flex;
   flex-direction: column;
@@ -566,6 +570,7 @@ main {
 }
 
 .carusel {
+  width: 100%;
   padding: 50px 0px;
 }
 .carusel-center-text {
@@ -891,6 +896,7 @@ footer {
   width: 100%;
 }
 .menuu-right ul li {
+  width: fit-content;
   position: relative;
   list-style: none;
   font-size: 25px;
