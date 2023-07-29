@@ -13,8 +13,9 @@ body {
     box-sizing: border-box;
   }
   header {
+    color: white;
     padding: 10px 150px;
-    background-image: url("./img/image\ 5\ \(1\).png");
+    background-image: url("./img/Rectangle\ 295@2x.png");
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
