@@ -321,6 +321,7 @@ footer {
     left: 0;
   }
   .header-container-icon-menu-left{
+    color: #000000 !important;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -333,6 +334,9 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
+  }
+  .menuu-right ul li {
+    width: fit-content;
   }
   @media (max-width: 1270px) {
     .header-container-icon {
@@ -384,6 +388,16 @@ footer {
       }
 }
 @media (max-width: 720px) {
+  .menuu-right{
+      width: 100%;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .menu-left{
+    display: none;
+  }
     .header-container-icon-menu{
       display: flex;
     }
