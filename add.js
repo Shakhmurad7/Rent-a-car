@@ -20,7 +20,7 @@ close.addEventListener("click", function () {
   document.body.style.overflow = "visible";
 });
 
-fetch("http://localhost:3000/posts")
+fetch("https://rent-a-cart.vercel.app/posts")
   .then((req) => req.json())
   .then((data) => {
     console.log(data);
@@ -30,25 +30,25 @@ fetch("http://localhost:3000/posts")
       <img src="${elem.img}" />
 
       <div class="card-text">
-        <h2>Mercedes AMG GT</h2>
-        <p>${elem.year}-ci il</p>
-        <p><span>300 AZN/gün</span></p>
+        <h2>${elem.name}</h2>
+        <p>${elem.year} il</p>
+        <p><span>${elem.price} AZN/gun</span></p>
       </div>
 
       <div class="card-icon">
         <div class="card-item-icon">
           <img src="./img/Vector.svg" alt="" />
-          <p>4.0L</p>
+          <p>${elem.motor}L</p>
         </div>
 
         <div class="card-item-icon">
           <img src="./img/karobka.svg" alt="" />
-          <p>Auto</p>
+          <p>${elem.korobka}</p>
         </div>
 
         <div class="card-item-icon">
           <img src="./img/benzin.svg" alt="" />
-          <p>Yanacaq</p>
+          <p>${elem.fuel}</p>
         </div>
       </div>
       <div class="section-btn-a-card">
