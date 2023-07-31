@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./singel.css" />
     <link
       rel="stylesheet"
@@ -20,6 +21,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assests/css/nice-select.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   </head>
   <body>
     <!-- -----header---- -->
@@ -125,12 +127,26 @@
     <div class="main-container">
 
       <div class="main-left">
+       
+<div class="swiper swiper_main">
+  <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./img/Tayota.png"></div>
+      <div class="swiper-slide"><img src="./img/image 16.png"></div>
+      <div class="swiper-slide"><img src="./img/Toyota Tacoma.jpg"></div>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
 
-        <div class="img-top">
-          <img src="./img/Tayota.png" alt="">
-        </div>
+<div class="swiper swiper_thumbnail">
+  <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./img/posrh 911.jpg"></div>
+      <div class="swiper-slide"><img src="./img/car.jpg"></div>
+      <div class="swiper-slide"><img src="./img/Bwm m8.jpg"></div>
+  </div>
+</div>
 
-        </div>
+      </div>
         
         <div class="main-right">
           <p class="p-block">Ekonom Klass</p>
@@ -161,13 +177,13 @@
     </div>
       </main>
 
-      
-      <footer>
-        <div class="footer-container">
-          <div class="footer-img">
-            <img src="./img/afn logo 2.png" />
-          </div>
+     
+    <footer>
+      <div class="footer-container">
+        <div class="footer-img">
+          <img src="./img/afn logo 2.png" />
         </div>
+
         <div class="footer-container-page">
           <div class="footer-block-text">
             <p>Əsas səhifə</p>
@@ -217,13 +233,15 @@
           </div>
         </div>
       </div>
+
       <div class="footer-end">
         <p>© AFN Transport - 2021. Müəllif hüquqları qorunur.</p>
         <p>Sayt Jedai tərəfindən yaradılmışdır.</p>
       </div>
     </footer>
 
-    <script src="./jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
     <script src="./add.js"></script>
     <script src="./singel.js"></script>
     
