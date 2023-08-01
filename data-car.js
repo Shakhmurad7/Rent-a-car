@@ -54,10 +54,12 @@ fetch("https://rent-a-cart.vercel.app/posts")
         </div>
       </div>
       <div class="section-btn-a-card">
-        <a href="">Ətraflı</a>
+         <a href="./singel.html">Ətraflı</a> 
+        
       </div>
     </div>
       `;
+      console.log(elem.link);
     });
     $("#pagination").pagination({
       dataSource: data,

@@ -23,3 +23,11 @@ sectionHeaders.forEach((header) => {
     }
   });
 });
+
+
+Terms.addEventListener("click" , function(){
+  features.classList.toggle("active-fearures")
+})
+features.addEventListener("click" , function(){
+  features.classList.toggle("active-fearures")
+})

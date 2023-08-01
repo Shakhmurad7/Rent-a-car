@@ -18,3 +18,6 @@ close.addEventListener("click", function () {
   meniContainer.classList.toggle("menu-active");
   document.body.style.overflow = "visible";
 });
+
+
+AOS.init();
