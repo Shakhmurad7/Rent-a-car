@@ -1,7 +1,6 @@
 const accardion = document.querySelectorAll(".accardion-blok");
 const sectionCard = document.querySelector(".section-card");
 
-console.log(sectionCard);
 for (i = 0; i < accardion.length; i++) {
   accardion[i].addEventListener("click", function () {
     this.classList.toggle("accardion-active");

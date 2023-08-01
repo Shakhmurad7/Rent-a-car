@@ -1,32 +1,25 @@
-var main = new Splide( '#main-slider', {
-  type       : 'fade',
-  heightRatio: 0.5,
-  pagination : false,
-  arrows     : false,
-  cover      : true,
-} );
+const Terms = document.querySelector(".Terms");
+const features = document.querySelector(".features");
 
-var thumbnails = new Splide( '#thumbnail-slider', {
-  rewind          : true,
-  fixedWidth      : 104,
-  fixedHeight     : 58,
-  isNavigation    : true,
-  gap             : 10,
-  focus           : 'center',
-  pagination      : false,
-  cover           : true,
-  dragMinThreshold: {
-    mouse: 4,
-    touch: 10,
-  },
-  breakpoints : {
-    640: {
-      fixedWidth  : 66,
-      fixedHeight : 38,
-    },
-  },
-} );
+const sectionHeaders = document.querySelectorAll(".section-top h3");
+const sectionContaionerNext = document.querySelector(
+  ".section-contaioner-next"
+);
+const tabContent = document.querySelectorAll(".tabContent");
 
-main.sync( thumbnails );
-main.mount();
-thumbnails.mount();
+sectionHeaders.forEach((header) => {
+  header.addEventListener("click", (e) => {
+    const tabName = e.target.dataset.id;
+
+    for (i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "flex";
+
+
+    for (i = 0; i < sectionHeaders.length; i++) {
+      sectionHeaders[i].classList.remove("active");
+      header.classList.add("active");
+    }
+  });
+});
