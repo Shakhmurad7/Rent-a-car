@@ -3,9 +3,10 @@ const swiper_thumbnail = new Swiper(".swiper_thumbnail", {
 });
 const swiper = new Swiper(".swiper_main", {
   loop: true,
-  autoplay: {
-    delay: 2000,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  // },
+  autoplay:false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

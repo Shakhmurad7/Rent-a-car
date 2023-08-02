@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./singel.css" />
     <link
       rel="stylesheet"
@@ -21,7 +24,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assests/css/nice-select.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- -----header---- -->
@@ -122,167 +128,331 @@
       </div>
     </header>
 
-
-  <main>
-    <div class="main-container">
-
-      <div class="main-left">
-       
-<div class="swiper swiper_main">
-  <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./img/posrh 911.jpg"></div>
-      <div class="swiper-slide"><img src="./img/Bmw x5.jpg"></div>
-      <div class="swiper-slide"><img src="./img/Bwm m8.jpg"></div>
-  </div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
-
-<div class="swiper swiper_thumbnail">
-  <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="./img/posrh 911.jpg">
-      </div>
-      <div class="swiper-slide"><img src="./img/Bmw x5.jpg"></div>
-      <div class="swiper-slide"><img src="./img/Bwm m8.jpg"></div>
-  </div>
-</div>
-
-      </div>
-        
-        <div class="main-right">
-          <p class="p-block">Ekonom Klass</p>
-          <h2>Toyota Land Cruiser</h2>
-          <h3>300 AZN/gun</h3>
-          <div class="main-right-row">
-            
-            <div class="main-text-row">
-              <p class="p-black">2-9 gun icrae</p>
-              <p class="opaciti-p">300 AZN/gun</p>
+    <main>
+      <div class="main-container">
+        <div class="main-left">
+          <div class="swiper swiper_main">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./img/posrh 911.jpg"
+                  onclick="openModal();currentSlide(1)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./img/Bmw x5.jpg"
+                  onclick="openModal();currentSlide(2)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./img/Bwm m8.jpg"
+                  onclick="openModal();currentSlide(3)"
+                />
+              </div>
             </div>
-            
-            <div class="main-text-row">
-              <p class="p-black">10-25 gun icrae</p>
-              <p class="opaciti-p">280 AZN/gun</p>
-            </div>
-            
-            <div class="main-text-row">
-              <p class="p-black">26-30 gun icrae</p>
-              <p class="opaciti-p">220 AZN/gun</p>
-            </div>
-            
+
+            <div class="swiper-button-prev" onclick="plusSlides(-1)"></div>
+            <div class="swiper-button-next" onclick="plusSlides(1)"></div>
+
+            <div class="swiper swiper_thumbnail">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./img/posrh 911.jpg"></div>
+                  <div class="swiper-slide"><img src="./img/Bmw x5.jpg"></div>
+                  <div class="swiper-slide"><img src="./img/audi a7.jpg"></div>
+              </div>
           </div>
-          <button>Indi icrae et</button>
+
+            <!-- The Modal/Lightbox -->
+          </div>
+
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+
+            <div class="modal-content">
+              <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="./img/posrh 911.jpg" style="width: 100%" />
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="./img/Bmw x5.jpg" style="width: 100%" />
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="./img/audi a7.jpg" style="width: 100%" />
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="./img/posrh 911.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(1)"
+                  alt="Nature and sunrise"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="./img/Bmw x5.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(2)"
+                  alt="Snow"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="./img/audi a7.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(3)"
+                  alt="Mountains and fjords"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
           
+          <div class="main-right">
+            <p class="p-block">Ekonom Klass</p>
+            <h2>Toyota Land Cruiser</h2>
+            <h3>300 AZN/gun</h3>
+            <div class="main-right-row">
+              <div class="main-text-row">
+                <p class="p-black">2-9 gun icrae</p>
+                <p class="opaciti-p">300 AZN/gun</p>
+              </div>
+
+              <div class="main-text-row">
+                <p class="p-black">10-25 gun icrae</p>
+                <p class="opaciti-p">280 AZN/gun</p>
+              </div>
+
+              <div class="main-text-row">
+                <p class="p-black">26-30 gun icrae</p>
+                <p class="opaciti-p">220 AZN/gun</p>
+              </div>
+            </div>
+            <button>Indi icrae et</button>
+          </div>
+      </div>
+    </main>
+
+    <section>
+      <div class="section-container">
+        <div class="section-top">
+          <h3 class="features" data-id="features">Features</h3>
+          <h3 class="Terms" data-id="terms">Terms of renth</h3>
+        </div>
+
+        <div class="section-block tabContent" id="features">
+          <div class="section-page-block">
+            <div class="section-min-block">
+              <img src="./img/Frame (3).svg" alt="" />
+              <div class="section-text-col">
+                <p>İl:</p>
+                <p>2022</p>
+              </div>
+            </div>
+
+            <div class="section-min-block">
+              <img src="./img/car-icon.svg" alt="" />
+              <div class="section-text-col">
+                <p>Klass:</p>
+                <p>Ekonom</p>
+              </div>
+            </div>
+
+            <div class="section-min-block">
+              <img src="./img/karobka-svg.svg" alt="" />
+              <div class="section-text-col">
+                <p>Transmissiya:</p>
+                <p>Avtomatik</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-page-block">
+            <div class="section-min-block">
+              <img src="./img/prace-icon.svg" alt="" />
+              <div class="section-text-col">
+                <p>Qiymət:</p>
+                <p>75 AZN</p>
+              </div>
+            </div>
+
+            <div class="section-min-block">
+              <img src="./img/motor.png" alt="" />
+              <div class="section-text-col">
+                <p>Mühərrik:</p>
+                <p>1.5 L</p>
+              </div>
+            </div>
+
+            <div class="section-min-block">
+              <img src="./img/yanacaq.png" alt="" />
+              <div class="section-text-col">
+                <p>Yanacaq:</p>
+                <p>Yanacaq</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-contaioner-next tabContent" id="terms">
+          <div class="section-block-next">
+            <p>Depozit: 200 AZN</p>
+            <p>Sürücülük vəsiqəsi</p>
+          </div>
+
+          <div class="section-block-next">
+            <p>İcarə üçün öncədən ödəniş</p>
+            <p>Sürücülük təcrübəsi: 2 il</p>
+          </div>
+
+          <div class="section-block-next">
+            <p>Minimal yaş: 24</p>
+            <p>Şəxsiyyət vəsiqəsi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-top-text">
+      <h2>Digər avtomobillər</h2>
+    </div>
+    <div class="section-card">
+      <div class="card" data-aos="fade-down">
+        <img src="./img/mercedes.png" />
+
+        <div class="card-text">
+          <h2>Mercedes AMG GT</h2>
+          <p>2021-ci il</p>
+          <p><span>300 AZN/gün</span></p>
+        </div>
+
+        <div class="card-icon">
+          <div class="card-item-icon">
+            <img src="./img/Vector.svg" alt="" />
+            <p>4.0L</p>
+          </div>
+
+          <div class="card-item-icon">
+            <img src="./img/karobka.svg" alt="" />
+            <p>Auto</p>
+          </div>
+
+          <div class="card-item-icon">
+            <img src="./img/benzin.svg" alt="" />
+            <p>Yanacaq</p>
+          </div>
+        </div>
+        <div class="section-btn-a-card">
+          <a href="./singel.html">Ətraflı</a>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <img src="./img/Tayota.png" />
+
+        <div class="card-text">
+          <h2>Toyota Tacoma</h2>
+          <p>2021-ci il</p>
+          <p><span>75 AZN/gün</span></p>
+        </div>
+
+        <div class="card-icon">
+          <div class="card-item-icon">
+            <img src="./img/Vector.svg" alt="" />
+            <p>4.0L</p>
+          </div>
+
+          <div class="card-item-icon">
+            <img src="./img/karobka.svg" alt="" />
+            <p>Auto</p>
+          </div>
+
+          <div class="card-item-icon">
+            <img src="./img/benzin.svg" alt="" />
+            <p>Yanacaq</p>
+          </div>
+        </div>
+        <div class="section-btn-a-card">
+          <a href="./singel.html">Ətraflı</a>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-down">
+        <img src="./img/hundyi santafe.png" />
+
+        <div class="card-text">
+          <h2>Hyundai</h2>
+          <p>2020-ci il</p>
+          <p><span>90 AZN/gün</span></p>
+        </div>
+
+        <div class="card-icon">
+          <div class="card-item-icon">
+            <img src="./img/Vector.svg" alt="" />
+            <p>2.0L</p>
+          </div>
+
+          <div class="card-item-icon">
+            <img src="./img/karobka.svg" alt="" />
+            <p>Auto</p>
+          </div>
+
+          <div class="card-item-icon">
+            <img src="./img/benzin.svg" alt="" />
+            <p>Yanacaq</p>
+          </div>
+        </div>
+        <div class="section-btn-a-card">
+          <a href="./singel.html">Ətraflı</a>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <img src="./img/Rectangle 261.png" />
+
+        <div class="card-text">
+          <h2>Ford Focus</h2>
+          <p>2012-ci il</p>
+          <p><span>50 AZN/gün</span></p>
+        </div>
+
+        <div class="card-icon">
+          <div class="card-item-icon">
+            <img src="./img/Vector.svg" alt="" />
+            <p>1.5L</p>
+          </div>
+
+          <div class="card-item-icon">
+            <img src="./img/karobka.svg" alt="" />
+            <p>Auto</p>
+          </div>
+
+          <div class="card-item-icon">
+            <img src="./img/benzin.svg" alt="" />
+            <p>Yanacaq</p>
+          </div>
+        </div>
+        <div class="section-btn-a-card">
+          <a href="./singel.html">Ətraflı</a>
         </div>
       </div>
     </div>
-  </main>
-
-<section>
-
-  <div class="section-container">
-    <div class="section-top">
-            <h3 class="features" data-id="features">Features</h3>
-            <h3 class="Terms" data-id="terms">Terms of renth</h3>
-          </div>
-          
-          
-          <div class="section-block tabContent" id="features">
-
-            <div class="section-page-block">
-              <div class="section-min-block">
-                <img src="./img/Frame (3).svg" alt="">
-                <div class="section-text-col">
-                  <p>İl:</p>
-                  <p>2022</p>
-                </div>
-              </div>
-              
-              <div class="section-min-block">
-                <img src="./img/car-icon.svg" alt="">
-                <div class="section-text-col">
-                  <p>Klass:</p>
-                  <p>Ekonom</p>
-                </div>
-              </div>
-              
-              <div class="section-min-block">
-                <img src="./img/karobka-svg.svg" alt="">
-                <div class="section-text-col">
-                  <p>Transmissiya:</p>
-                  <p>Avtomatik</p>
-                </div>
-            </div>
-         </div>
-
-            <div class="section-page-block">
-              <div class="section-min-block">
-                <img src="./img/prace-icon.svg" alt="">
-                <div class="section-text-col">
-                  <p>Qiymət:</p>
-                  <p>75 AZN</p>
-                </div>
-              </div>
-              
-              <div class="section-min-block">
-                <img src="./img/motor.png" alt="">
-                <div class="section-text-col">
-                  <p>Mühərrik:</p>
-                  <p>1.5 L</p>
-                </div>
-              </div>
-              
-              <div class="section-min-block">
-                <img src="./img/yanacaq.png" alt="">
-                <div class="section-text-col">
-                  <p>Yanacaq:</p>
-                  <p>Yanacaq</p>
-                </div>
-              </div>
-            </div>
-
-              
-            </div>
-
-            <div class="section-contaioner-next tabContent" id="terms">
-
-              <div class="section-block-next">
-                <p>Depozit: 200 AZN</p>
-                <p>Sürücülük vəsiqəsi</p>
-              </div> 
-
-              <div class="section-block-next">
-                <p>İcarə üçün öncədən ödəniş</p>
-                <p>Sürücülük təcrübəsi: 2 il</p>
-              </div>
-
-              <div class="section-block-next">
-                <p>Minimal yaş: 24</p>
-                <p>Şəxsiyyət vəsiqəsi</p>
-              </div>
-
-
-            </div>
-
-            
-          </div>
-          
-        </section>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <footer>
       <div class="footer-container">
@@ -350,6 +520,5 @@
     <script src="./index.js"></script>
     <script src="./add.js"></script>
     <script src="./singel.js"></script>
-    
   </body>
 </html>
