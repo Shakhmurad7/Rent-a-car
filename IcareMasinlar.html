@@ -86,8 +86,8 @@
               <li><a href="./index.html">Əsas səhifə</a></li>
               <li><a href="./IcareMasinlar.html">İcarə maşınlar</a></li>
               <li><a href="./sirketinHaqqinda.html">Şirkət haqqında</a></li>
-              <li><a href="#">Şərtlər</a></li>
-              <li><a href="./singel.html">Əlaqə</a></li>
+              <li><a href="./Sertler.html">Şərtlər</a></li>
+              <li><a href="">Əlaqə</a></li>
             </ul>
 
             <div class="header-container-icon-menu">
@@ -129,27 +129,28 @@
     <div class="container-select">
       <div class="select-block">
         <h3>Brend</h3>
-        <select>
+        <select id="select-box" onchange="myFunction(this)" data-name="brend">
+          <option class="" data-display="Select">Nothing</option>
+          <option value="BMW">Bmw</option>
+          <option value="audi">Audi</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Yanacaq">Hamsi</option>
+        </select>
+      </div>
+
+      <div class="select-block">
+        <h3>Sinif</h3>
+        <select id="select-box" onchange="myFunction(this)" data-name="model">
           <option data-display="Select">Nothing</option>
-          <option value="1">Some option</option>
+          <option value="X5">x5</option>
           <option value="2">Another option</option>
           <option value="3" disabled>A disabled option</option>
           <option value="4">Potato</option>
         </select>
       </div>
 
-      <div class="select-block">
-        <h3>Snif</h3>
-        <select>
-          <option data-display="Select">Nothing</option>
-          <option value="1">Some option</option>
-          <option value="2">Another option</option>
-          <option value="3" disabled>A disabled option</option>
-          <option value="4">Potato</option>
-        </select>
-      </div>
-
-      <div class="select-block">
+      <div class="select-block" onchange="myFunction(this)" data-name="class">
         <h3>Model</h3>
         <select>
           <option data-display="Select">Nothing</option>
@@ -160,7 +161,7 @@
         </select>
       </div>
 
-      <div class="select-block-end">
+      <div class="select-block-end" onchange="myFunction(this)" data-name="year">
         <h3>il</h3>
         <select>
           <option data-display="Select">Nothing</option>
@@ -171,17 +172,16 @@
         </select>
       </div>
 
-      <button>Axtar</button>
+      <button id="search-button">Axtar</button>
     </div>
 
-    
     <main>
       <section>
         <div class="section-card"></div>
         <div id="pagination"></div>
       </section>
     </main>
-    
+
     <!-- ----footer----- -->
     <footer>
       <div class="footer-container">
@@ -248,5 +248,8 @@
     <script src="./js/jquery.nice-select.js"></script>
     <script src="./js/pagination.js.org_dist_2.6.0_pagination.min.js"></script>
     <script src="./add.js"></script>
+
+    <script>
+       </script>
   </body>
 </html>

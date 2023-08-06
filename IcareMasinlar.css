@@ -514,3 +514,6 @@ footer {
 .paginationjs-page.J-paginationjs-page.active a {
   color: #fff;
 }
+.hide{
+  display: none;
+}
