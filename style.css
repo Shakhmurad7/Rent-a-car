@@ -1101,3 +1101,14 @@ footer {
     font-size: 1.8rem;
   }
 }
+.sample-slider{
+  width:1200px;
+  height:auto;
+}
+.sample-slider img{
+  width: 50%;
+  height: 50%;
+  margin-top: -50px;
+  object-fit: contain;
+
+}

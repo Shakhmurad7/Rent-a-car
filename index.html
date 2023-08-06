@@ -12,6 +12,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -124,6 +126,8 @@
         </div>
       </div>
 
+
+<!-- 
       <div class="header-center-container">
         <div class="header-center-left">
           <h2><span>EKONOM</span></h2>
@@ -145,8 +149,79 @@
 
       <div class="header-end-container">
         <img src="./img/hundai-elantra-econom-1 1.png" />
-      </div>
+      </div> -->
+
+
+
+    <div class="swiper sample-slider">
+        <div class="swiper-wrapper">
+
+
+            <div class="swiper-slide">
+              <div class="header-center-container">
+                <div class="header-center-left">
+                  <h2><span>EKONOM</span></h2>
+                  <h2>KLASS</h2>
+                </div>
+        
+                <div class="header-center-right">
+                  <h2>Premium Klass</h2>
+                  <h3>avtomobillərinin kirayəsi</h3>
+        
+                  <div class="header-blok-a">
+                    <div class="header-box-a">
+                      <a href="">İndi icarə et</a>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="header-end-container">
+                <img src="./img/hundai-elantra-econom-1 1.png" />
+              </div>
+        
+
+            </div>
+
+
+            <div class="swiper-slide">
+              
+            <div class="swiper-slide">
+              <div class="header-center-container">
+                <div class="header-center-left">
+                  <h2><span>BIZNES</span></h2>
+                  <h2>KLASS</h2>
+                </div>
+        
+                <div class="header-center-right">
+                  <h2>Premium Klass</h2>
+                  <h3>avtomobillərinin kirayəsi</h3>
+        
+                  <div class="header-blok-a">
+                    <div class="header-box-a">
+                      <a href="">İndi icarə et</a>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="header-end-container">
+                <img class="img-carusel" src="./img/image 15.png" />
+              </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+
     </header>
+
+
 
     <nav>
       <div class="nav-blok">
@@ -694,6 +769,24 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.sample-slider', {
+          loop: true,
+          // effect:'fade' ,                        //loop
+          autoplay: {                         //autoplay
+            delay: 2000,  
+        }, 
+        loop:true,      
+        pagination: {                       //pagination(dots)
+            el: '.swiper-pagination',
+        },
+        navigation: {                       //navigation(arrow)
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    })
+    </script>
     <script src="./jquery.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./add owlcarusel.js"></script>
@@ -701,3 +794,5 @@
     <script src="./add.js"></script>
   </body>
 </html>
+
+    
