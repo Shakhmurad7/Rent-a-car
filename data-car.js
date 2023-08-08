@@ -82,7 +82,7 @@ button.addEventListener("click", async () => {
          </div>
        </div>
        <div class="section-btn-a-card">
-          <a href="./singel.html">Ətraflı</a> 
+          <a href="./singel.html">etrafli</a> 
          
        </div>
      </div>
@@ -184,7 +184,7 @@ function template(data) {
       </div>
     </div>
     <div class="section-btn-a-card">
-      <a href="">Ətraflı</a>
+      <a href="./singel.html?id=${elem.id}">Ətraflı</a>
     </div>
   </div>
     `;

@@ -20,4 +20,19 @@ close.addEventListener("click", function () {
 });
 
 
+
+
+const headerTopIcon = document.querySelector('.header-right-top')
+
+headerTopIcon.addEventListener('click' , function(){
+  meniContainer.classList.toggle("menu-active");
+  document.body.style.overflow = "hidden";
+})
+
+close.addEventListener("click", function () {
+  meniContainer.classList.toggle("menu-active");
+  document.body.style.overflow = "visible";
+});
+
+
 AOS.init();

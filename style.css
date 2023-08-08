@@ -21,9 +21,18 @@ header {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: auto;
+}
+.heder-botton-text{
+  font-weight: 700;
+  padding: 0px 20px;
+  font-size: 30px;
+  color: #f36f20;
+  display: flex;
+  justify-content: space-between;
 }
 .header-top-container img {
+  cursor: pointer;
   object-fit: cover;
 }
 .header-top-container {
@@ -329,6 +338,7 @@ section {
   transform: scale(1.1);
 }
 .section-btn-a a {
+  cursor: pointer;
   transition: 0.5s;
   padding: 10px 20px;
   background-color: transparent;
@@ -353,7 +363,17 @@ section {
   max-width: 700px;
   width: 100%;
 }
+.econom{
+  position: absolute;
+  right: 10px;
+  border-radius: 10px;
+  top: 10px;
+  padding: 0px 10px;
+  background-color: #f36f20;
+  color: white;
+}
 .card {
+  position: relative;
   border-radius: 10px;
   width: 240px;
   height: auto;
@@ -374,6 +394,13 @@ section {
   font-weight: 700;
   font-size: 18px;
   padding-bottom: 10px;
+}
+.tab-none{
+  display: none;
+}
+.cart-tabcontent{
+  flex-wrap: wrap;
+  gap: 40px;
 }
 .card-text {
   margin: 0px 10px;
@@ -780,12 +807,14 @@ footer {
   gap: 40px;
 }
 .footer-img {
+  cursor: pointer;
   padding: 0px 15px;
 }
 .footer-block-text {
   padding: 0px 15px;
 }
 .footer-block-text p {
+  cursor: pointer;
   padding: 5px 0px;
   position: relative;
 }
@@ -1106,9 +1135,20 @@ footer {
   height:auto;
 }
 .sample-slider img{
-  width: 50%;
-  height: 50%;
+  width:600px;
+  height: 350px;
   margin-top: -50px;
   object-fit: contain;
 
+}
+.active-elem.section-btn-a a{
+  cursor: pointer;
+  background-color:#f36f20;
+  color: rgb(255, 255, 255);
+}
+.alll{
+  display: flex;
+}
+.swiper-slide{
+  cursor: pointer;
 }

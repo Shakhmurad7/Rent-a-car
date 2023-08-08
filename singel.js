@@ -13,6 +13,7 @@ sectionHeaders.forEach((header) => {
   sectionHeaders[0].classList.add("active");
   header.addEventListener("click", (e) => {
     const tabName = e.target.dataset.id;
+  
 
     for (i = 0; i < tabContent.length; i++) {
       tabContent[i].style.display = "none";
@@ -70,3 +71,4 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
+console.log(location.search);
