@@ -15,7 +15,7 @@ a {
 header {
   color: white;
   padding: 10px 150px;
-  background-image: url("./img/Rectangle\ 295@2x.png");
+  background-image: url("../img/Rectangle\ 295@2x.png");
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,7 +88,7 @@ header {
 }
 
 nav {
-  background-image: url("./img/single\ page\ image\ 1.png");
+  background-image: url("../img/single\ page\ image\ 1.png");
   background-blend-mode: multiply;
   background-color: #464646;
   background-size: cover;
@@ -238,7 +238,7 @@ section {
 }
 
 footer {
-  background-image: url("./img/footer.jpg");
+  background-image: url("../img/footer.jpg");
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -279,6 +279,9 @@ footer {
 }
 .footer-icon-row-p i {
   color: #f36f20;
+}
+.footer-block-text p{
+  cursor: pointer;
 }
 .footer-icon-row-p {
   align-items: center;
@@ -341,7 +344,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-image: url("./menu-bg.jpg");
+  background-image: url('../img/menu-bg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

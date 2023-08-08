@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./IcareMasinlar.css" />
+        <!-- ----Style.css---- -->
+    <link rel="stylesheet" href="IcareMasinlar.css" />
+
+        <!-- ---Font-awesome---- -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,22 +15,29 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+       <!-- ----Aos-animtion---- -->
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
+        <!-- ----Font-family---- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assests/css/nice-select.css" />
+
+    <!-- ---css nice-select---- -->
+    <link rel="stylesheet" href="../assests/css/nice-select.css" />
+    
   </head>
   <body>
+
     <!-- -----header---- -->
 
     <header>
       <div class="header-top-container">
-        <a href="./index.html">
-          <img src="./img/afn logo 2.png" />
+        <a href="../index.html">
+          <img src="../img/afn logo 2.png" />
         </a>
 
         <div class="header-container-icon">
@@ -53,12 +63,13 @@
         </div>
 
         <div id="hamburger" class="header-icon hamburger">
-          <img src="./img/menu-white.png" />
+          <img src="../img/menu-white.png" />
         </div>
 
+<!-- ----menu-container----- -->
         <div class="menu-container">
           <div class="menu-left">
-            <img src="./img/afn logo 1.png" alt="" />
+            <img src="../img/afn logo 1.png" alt="" />
 
             <div class="header-container-icon-menu-left">
               <div class="header-icon">
@@ -85,11 +96,11 @@
 
           <div class="menuu-right">
             <ul>
-              <li><a href="./index.html">Əsas səhifə</a></li>
-              <li><a href="./IcareMasinlar.html">İcarə maşınlar</a></li>
-              <li><a href="./sirketinHaqqinda.html">Şirkət haqqında</a></li>
-              <li><a href="./Sertler.html">Şərtlər</a></li>
-              <li><a href="./Elaqe.html">Əlaqə</a></li>
+              <li><a href="../index.html">Əsas səhifə</a></li>
+              <li><a href="../IcareMasinlar/IcareMasinlar.html">İcarə maşınlar</a></li>
+              <li><a href="../Haqqinda/sirketinHaqqinda.html">Şirkət haqqında</a></li>
+              <li><a href="../Sertler/Sertler.html">Şərtlər</a></li>
+              <li><a href="../Elaqe/Elaqe.html">Əlaqə</a></li>
             </ul>
 
             <div class="header-container-icon-menu">
@@ -122,12 +133,16 @@
       </div>
     </header>
 
+
+<!-- ---Navbar---- -->
     <nav>
       <div class="nav-container">
         <h2>İcarəyə verilən avtomobillər</h2>
       </div>
     </nav>
 
+
+<!-- ---nice-select--- -->
     <div class="container-select">
       <div class="select-block">
         <h3>Brend</h3>
@@ -137,58 +152,64 @@
           <option value="audi">Audi</option>
           <option value="mercedes">Mercedes</option>
           <option value="Toyota">Toyota</option>
-          <option value="Yanacaq">Hamsi</option>
+        </select>
+      </div>
+
+      <div class="select-block">
+        <h3>Model</h3>
+        <select id="select-box" onchange="myFunction(this)" data-name="model">
+          <option data-display="Select">Nothing</option>
+          <option value="X5">x5</option>
+          <option value="A6">a6</option>
+          <option value="M5" >m5</option>
+          <option value="M8">m8</option>
+          <option value="A7">a7</option>
+          <option value="911">911</option>
+          <option value="Camry">Camry</option>
+          <option value="Tacoma">Tacoma</option>
+          <option value="Gts">Gts</option>
+          <option value="Amg">Amg</option>
         </select>
       </div>
 
       <div class="select-block">
         <h3>Sinif</h3>
-        <select id="select-box" onchange="myFunction(this)" data-name="model">
+        <select id="select-box" onchange="myFunction(this)" data-name="class">
           <option data-display="Select">Nothing</option>
-          <option value="X5">x5</option>
-          <option value="2">Another option</option>
-          <option value="3" disabled>A disabled option</option>
-          <option value="4">Potato</option>
+          <option value="jeep">Jeep</option>
+          <option value="sedan">Sedan</option>    
         </select>
       </div>
 
-      <div class="select-block" onchange="myFunction(this)" data-name="class">
-        <h3>Model</h3>
-        <select>
-          <option data-display="Select">Nothing</option>
-          <option value="1">Some option</option>
-          <option value="2">Another option</option>
-          <option value="3" disabled>A disabled option</option>
-          <option value="4">Potato</option>
-        </select>
-      </div>
-
-      <div class="select-block-end" onchange="myFunction(this)" data-name="year">
+      <div class="select-block-end">
         <h3>il</h3>
-        <select>
+        <select id="select-box" onchange="myFunction(this)" data-name="year">
           <option data-display="Select">Nothing</option>
-          <option value="1">Some option</option>
-          <option value="2">Another option</option>
-          <option value="3" disabled>A disabled option</option>
-          <option value="4">Potato</option>
+          <option value="2015-ci">2015</option>
+          <option value="2021-ci">2021</option>
+          <option value="2019-cu">2019</option>
+          <option value="2020-ci">2020</option>
+          <option value="2012-ci">2012</option>
         </select>
       </div>
 
       <button id="search-button">Axtar</button>
     </div>
 
+<!-- ---main-cart---- -->
     <main>
       <section>
         <div class="section-card"></div>
         <div id="pagination"></div>
       </section>
-    </main>
+    </main>   
 
-    <!-- ----footer----- -->
+
+<!-- ----footer----- -->
     <footer>
       <div class="footer-container">
         <div class="footer-img">
-          <img src="./img/afn logo 2.png" />
+          <img src="../img/afn logo 2.png" />
         </div>
 
         <div class="footer-container-page">
@@ -245,11 +266,13 @@
         <p>Sayt Jedai tərəfindən yaradılmışdır.</p>
       </div>
     </footer>
-    <script src="./js/jquery.js"></script>
+
+    <script src="../Home/jquery.js"></script>
     <script src="./data-car.js"></script>
-    <script src="./js/jquery.nice-select.js"></script>
-    <script src="./js/pagination.js.org_dist_2.6.0_pagination.min.js"></script>
-    <script src="./add.js"></script>
+    <script src="../js/jquery.nice-select.js"></script>
+    <script src="../js/pagination.js.org_dist_2.6.0_pagination.min.js"></script>
+    <script src="../assests/css/nice-select.css"></script>
+    <script src="../Home/add.js"></script>
 
     <script>
        </script>

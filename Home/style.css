@@ -17,7 +17,7 @@ a {
 }
 header {
   padding: 10px 150px;
-  background-image: url("./img/image\ 5\ \(1\).png");
+  background-image: url("../img/image\ 5\ \(1\).png");
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -290,7 +290,7 @@ nav {
   height: 110px;
   background-color: #28282841;
   background-blend-mode: multiply;
-  background-image: url("./img/black-metallic-with-detailed-circular-mesh_1017-21346\ 1.png");
+  background-image: url("../img/black-metallic-with-detailed-circular-mesh_1017-21346\ 1.png");
   object-fit: cover;
 }
 
@@ -450,7 +450,7 @@ main {
   padding: 50px;
   height: auto;
   width: 100%;
-  background-image: url("./img/Rectangle\ 182.png");
+  background-image: url("../img/Rectangle\ 182.png");
 }
 .main-text-top h2 {
   font-size: 2.2rem;
@@ -515,7 +515,7 @@ main {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./img/YUXARI\ SOL.png");
+  background-image: url("../img/YUXARI\ SOL.png ");
   width: 100px;
   height: 100px;
   right: 0;
@@ -529,7 +529,7 @@ main {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./img/YUXARI\ ORTA.png");
+  background-image: url("../img/YUXARI\ ORTA.png");
   width: 100px;
   height: 100px;
   right: 120px;
@@ -544,7 +544,7 @@ main {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./img/YUXARI\ SAG.png");
+  background-image: url("../img/YUXARI\ SAG.png");
   width: 100px;
   height: 100px;
   left: -120px;
@@ -562,7 +562,7 @@ main {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./img/ASAGI\ SOL.png");
+  background-image: url("../img/ASAGI\ SOL.png");
   width: 100px;
   height: 100px;
   right: -15px;
@@ -576,7 +576,7 @@ main {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./img/ASAHI\ ORTA.png");
+  background-image: url("../img/ASAHI\ ORTA.png");
   width: 100px;
   height: 100px;
   right: 100px;
@@ -590,7 +590,7 @@ main {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./img/ASAGI\ SAG.png");
+  background-image: url("../img/ASAGI\ SAG.png");
   width: 100px;
   height: 100px;
   left: -100px;
@@ -636,7 +636,7 @@ main {
 
 .container-page {
   width: 100%;
-  background-image: url("./img/rezervasiya-bg.jpg");
+  background-image: url("../img/rezervasiya-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
@@ -755,7 +755,7 @@ input::-webkit-inner-spin-button {
 
 aside {
   width: 100%;
-  background-image: url("./img/catdirilma-bg\ 1.png");
+  background-image: url("../img/catdirilma-bg\ 1.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -794,7 +794,7 @@ aside {
 }
 
 footer {
-  background-image: url("./img/footer.jpg");
+  background-image: url("../img/footer.jpg");
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -899,7 +899,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-image: url("./menu-bg.jpg");
+  background-image: url("../img/menu-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

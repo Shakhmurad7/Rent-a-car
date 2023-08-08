@@ -19,9 +19,6 @@ close.addEventListener("click", function () {
   document.body.style.overflow = "visible";
 });
 
-
-
-
 const headerTopIcon = document.querySelector('.header-right-top')
 
 headerTopIcon.addEventListener('click' , function(){
@@ -34,5 +31,5 @@ close.addEventListener("click", function () {
   document.body.style.overflow = "visible";
 });
 
-
 AOS.init();
+
