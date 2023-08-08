@@ -20,23 +20,51 @@ close.addEventListener("click", function () {
   document.body.style.overflow = "visible";
 });
 
-
-
 let url = `https://rent-a-cart.vercel.app/posts?`;
 const button = document.getElementById("search-button");
 const sectionfiltercart = document.querySelector(".section-card");
 let value = ""; // Declare the value variable in a higher scope
 
 const myFunction = (current) => {
-  const {dataset,value}  = current;
-  if(dataset.name === "year") {
-    
-    url += `q=${value}&`; // Update the value variable with the selected value
-  }else {
-    url += `${dataset.name}=${value}&`; // Update the value variable with the selected value
+  const { dataset, value } = current;
+
+  // Check if "dataset" or "year" is present in the "url"
+  const datasetInUrl = url.includes(dataset.name);
+  const yearInUrl = url.includes("year");
+
+  // If "dataset" or "year" is already present, replace the value
+  if (datasetInUrl || yearInUrl) {
+    let updatedUrl = url;
+
+    if (datasetInUrl) {
+      updatedUrl = updatedUrl.replace(
+        new RegExp(`${dataset.name}=.*?(&|$)`),
+        `${dataset.name}=${value}$1`
+      );
+    }
+
+    if (yearInUrl) {
+      updatedUrl = updatedUrl.replace(/q=.*?(&|$)/, `q=${value}$1`);
+    }
+
+    url = updatedUrl;
+  } else {
+    // If neither "dataset" nor "year" is present, append them with the new value
+    if (dataset.name === "year") {
+      url += `q=${value}&`;
+    } else {
+      url += `${dataset.name}=${value}&`;
+    }
   }
-  console.log(value);
+  
+  console.log(url);
+  // if(dataset.name === "year") {
+  //   url += `q=${value}&`; // Update the value variable with the selected value
+  // }else {
+  //   url += `${dataset.name}=${value}&`; // Update the value variable with the selected value
+  // }
 };
+
 
 // const myFunction1 = (e) => {
 //   // value += document.getElementById("select-box1").value; // Update the value variable with the selected value
@@ -82,8 +110,7 @@ button.addEventListener("click", async () => {
          </div>
        </div>
        <div class="section-btn-a-card">
-          <a href="./singel.html">etrafli</a> 
-         
+        <a href="./singel.html?id=${element.id}">Ətraflı</a>
        </div>
      </div>
     `;
@@ -133,7 +160,7 @@ fetch("https://rent-a-cart.vercel.app/posts")
         </div>
       </div>
       <div class="section-btn-a-card">
-         <a href="./singel.html">Ətraflı</a> 
+        <a href="./singel.html?id=${elem.id}">Ətraflı</a>
         
       </div>
     </div>

@@ -1,6 +1,30 @@
 const Terms = document.querySelector(".Terms");
 const features = document.querySelector(".features");
 
+
+const id = new URLSearchParams(window.location.search).get("id");
+const swiperSlideImages = document.querySelectorAll('.swiper_main .swiper-slide img')
+const swiperSlideImg   = document.querySelectorAll('.swiper_thumbnail .swiper-slide img')
+const mySlides = document.querySelectorAll(".mySlides img")
+const demo = document.querySelectorAll(".demo")
+
+
+
+fetch(`https://rent-a-cart.vercel.app/posts/${id}`).then((res)=> res.json()).then((data)=> {
+  console.log(data);
+  SetSingleItemData(data)
+}).catch((error) => console.log(error))
+
+function SetSingleItemData(data) {
+  for (let i = 0; i < 4; i++) {
+    swiperSlideImages[i].src = data.img
+    swiperSlideImg[i].src = data.img
+    mySlides[i].src = data.img
+    demo[i].src = data.img
+  }
+}
+
+
 const sectionHeaders = document.querySelectorAll(".section-top h3");
 const sectionContaionerNext = document.querySelector(
   ".section-contaioner-next"
@@ -70,5 +94,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-console.log(location.search);
