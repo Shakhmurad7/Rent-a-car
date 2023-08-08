@@ -17,7 +17,13 @@ header{
 
 }
 .header-container-left{
-    width: 700px;
+  height: 100%;
+}
+.header-container-left img{
+  width: 400px;
+}
+.header-left-top img{
+width:100% ;
 }
 .header-left-top{
     background-color: #464646;
@@ -26,9 +32,6 @@ header{
     align-items: center;
     padding: 20px;
 }
-.img-left{
-    width: 100%;
-}
 .header-container-right{
     width: 100%;
     background-image: url('./img/map\ 1.png');
@@ -36,18 +39,29 @@ header{
     background-size: contain;
     background-position: top;
 }
+.header-left-top img{
+  cursor: pointer;
+}
 .header-right-top{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.508);
     justify-content: flex-end;
-    padding: 50px 100px;
+    padding: 30px 100px;
     align-items: center;
     display: flex;
 }
 .header-container-page{
     padding: 60px 30px;
 }
+.img-right-container{
+  display: none;
+}
+  
+
+
 .header-row{
+  justify-content: center;
+  flex-wrap: wrap;
     gap: 30px;
     display: flex;
     align-items: center;
@@ -58,6 +72,9 @@ header{
     align-items: center;
 }
 .header-container-page h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
     padding-bottom: 30px;
 }
 .header-block{
@@ -265,6 +282,16 @@ footer {
     }
 }
   @media (max-width: 1050px) {
+    .img-right-container{
+      display: flex;
+    }
+    .header-right-top{
+      padding: 10px 20px;
+      justify-content:space-between;
+  }
+    .header-container-left{
+      display: none;
+    }
     .footer-end {
         padding: 40px 30px;
         flex-wrap: wrap;
@@ -291,6 +318,7 @@ footer {
 
 } 
 @media (max-width: 720px) {
+
 .menuu-right{
   width: 100%;
   flex-direction: column;
