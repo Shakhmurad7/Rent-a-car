@@ -11,7 +11,6 @@ const demo = document.querySelectorAll(".demo")
 
 
 fetch(`https://rent-a-cart.vercel.app/posts/${id}`).then((res)=> res.json()).then((data)=> {
-  console.log(data);
   SetSingleItemData(data)
 }).catch((error) => console.log(error))
 
