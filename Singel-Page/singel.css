@@ -820,6 +820,9 @@ footer {
 
 } 
 @media (max-width: 720px) {
+  .section-card{
+    justify-content: center;
+  }
   .section-page-block{
     display: flex;
     flex-direction: column;

@@ -140,12 +140,16 @@
 
 <!-- ---nice-select--- -->
     <div class="container-select">
-      <div class="select-block">
-        <h3>Brend</h3>
-        <select id="select-box" onchange="myFunction(this)" data-name="brend">
-          <option class="" data-display="Select">Nothing</option>
-          <option value="BMW">Bmw</option>
-          <option value="audi">Audi</option>
+      <div class="select-container-big">
+
+        <div class="select-container-block">
+          
+        <div class="select-block">
+          <h3>Brend</h3>
+          <select id="select-box" onchange="myFunction(this)" data-name="brend">
+            <option class="" data-display="Select">Nothing</option>
+            <option value="BMW">Bmw</option>
+            <option value="audi">Audi</option>
           <option value="mercedes">Mercedes</option>
           <option value="Toyota">Toyota</option>
         </select>
@@ -167,7 +171,9 @@
           <option value="Amg">Amg</option>
         </select>
       </div>
+    </div>
 
+    <div class="select-container-block">
       <div class="select-block">
         <h3>Sinif</h3>
         <select id="select-box" onchange="myFunction(this)" data-name="class">
@@ -188,8 +194,9 @@
           <option value="2012-ci">2012</option>
         </select>
       </div>
-
-      <button id="search-button">Axtar</button>
+    </div>
+  </div>
+    <button id="search-button">Axtar</button>
     </div>
 
 <!-- ---main-cart---- -->

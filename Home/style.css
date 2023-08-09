@@ -1127,16 +1127,25 @@ footer {
   }
 }
 @media (max-width: 500px) {
+  .cart-tabcontent {
+    justify-content: center;
+  }
+  .sample-slider img{
+    width: 100%;
+  } 
   .header-center-left h2 {
     font-size: 1.8rem;
   }
 }
+.heder-botton-text{
+  font-size: 16px;
+}
 .sample-slider{
-  width:1200px;
+  max-width:1200px;
   height:auto;
 }
 .sample-slider img{
-  width:600px;
+  max-width:600px;
   height: 350px;
   margin-top: -50px;
   object-fit: contain;
