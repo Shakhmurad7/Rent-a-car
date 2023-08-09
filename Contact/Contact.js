@@ -1,5 +1,4 @@
 
-
 const meniContainer = document.querySelector(".menu-container");
 const close = document.querySelector(".close");
 const headerTopIcon = document.querySelector('.header-right-top')
