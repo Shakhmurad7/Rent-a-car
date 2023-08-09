@@ -199,6 +199,11 @@ section {
   padding: 20px 0px;
   text-align: center;
 }
+.select-container-big{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .section-btn-a-card a {
   transition: 0.5s;
   text-align: center;
@@ -483,6 +488,9 @@ footer {
   }
 }
 @media (max-width: 720px) {
+  .select-container-big{
+    flex-direction: column;
+  }
   .nav-container h2{
     font-size: 1.3rem;
   }
