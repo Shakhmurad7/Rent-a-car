@@ -84,7 +84,7 @@ fetch("https://rent-a-cart.vercel.app/posts")
     data.forEach((elem) => {
       sectionCard.innerHTML += `
       <div class="card" data-aos="fade-down">
-      <img src="${elem.img}" />
+      <img src="${elem.img[0].img}" />
 
       <div class="card-text">
         <h2>${elem.name}</h2>
@@ -135,7 +135,7 @@ function template(data) {
   data.forEach((elem) => {
     html += `
     <div class="card" data-aos="fade-down">
-    <img src="${elem.img}" />
+    <img src="${elem.img[0].img}" />
 
     <div class="card-text">
       <h2>${elem.name}</h2>
