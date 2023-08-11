@@ -2,7 +2,7 @@ const swiper_thumbnail = new Swiper(".swiper_thumbnail", {
   slidesPerView: 3,
 });
 const swiper = new Swiper(".swiper_main", {
-  loop: true,
+  // loop: true,
   // autoplay: {
   //   delay: 2000,
   // },

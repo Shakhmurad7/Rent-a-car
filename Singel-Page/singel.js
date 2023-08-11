@@ -3,7 +3,7 @@ const features = document.querySelector(".features");
 
 const id = new URLSearchParams(window.location.search).get("id");
 const swiperSlideImages = document.querySelectorAll(
-  ".swiper_main .swiper-slide img"
+  ".swiper-slide .swiper-slider-img "
 );
 const swiperSlideImg = document.querySelectorAll(
   ".swiper_thumbnail .swiper-slide img"
@@ -15,8 +15,7 @@ const mainrighth2 = document.querySelector(".main-right h2");
 const mainrighth3 = document.querySelector(".main-right h3");
 const sectionTextColom = document.querySelectorAll('.section-text-col span')
 const mainTextRow = document.querySelectorAll('.main-text-row .opaciti-p')
-console.log(swiperSlideImages);
-console.log(swiperSlideImg);
+;
 
 
 fetch(`https://rent-a-cart.vercel.app/posts/${id}`)
@@ -40,13 +39,18 @@ function SetSingleItemData(data) {
   swiperSlideImg.forEach((element,i) => {
     element.src = data.img[i].img
   });
-  
+
+
   swiperSlideImages.forEach((element,i) => {
-    element.src = data.img[i].img
+      element.src=data.img[i].img
+       console.log(element);
   });
+
   
-
-
+  // swiperSlideImages.forEach((element,i) => {
+  //   element.src = data.img[i].img
+  // });
+  
 
        mainrightP.innerHTML = data.class;
        mainrighth3.innerHTML = `${data.price} AZN/gun `;
