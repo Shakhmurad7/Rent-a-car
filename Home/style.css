@@ -1034,7 +1034,6 @@ footer {
     gap: 20px;
   }
 }
-
 @media (max-width: 870px) {
   .main-text-top h2,
   .container-page-text h2,
@@ -1107,6 +1106,12 @@ footer {
     gap: 50px;
   }
 }
+@media (max-width: 818px) {
+  .cart-tabcontent{
+    justify-content: center;
+  }
+  
+}
 
 @media (max-width: 720px) {
   .header-container-icon-menu{
@@ -1147,7 +1152,6 @@ footer {
 .sample-slider img{
   max-width:600px;
   height: 350px;
-  margin-top: -50px;
   object-fit: contain;
 
 }
